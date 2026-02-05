@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#f6f1e8" />
+  <meta name="description" content="Meblove — meble na wymiar, zabudowy, kuchnie, szafy oraz projekty wnętrz. Premium design i perfekcyjne wykonanie." />
+  <title>Meblove — meble na wymiar i projekty wnętrz</title>
+
+  <!-- Preconnect / fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicons (opcjonalnie podmień) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' rx='16' fill='%23efe6d8'/%3E%3Cpath d='M18 42V22h6l8 10 8-10h6v20h-6V31l-8 10-8-10v11h-6z' fill='%231b1a17'/%3E%3C/svg%3E" />
+</head>
+
+<body>
+  <!-- Background / decoration layers -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grain"></div>
+    <div class="bg__glow bg__glow--a"></div>
+    <div class="bg__glow bg__glow--b"></div>
+    <div class="bg__grid"></div>
+  </div>
+
+  <!-- Skip link -->
+  <a class="skip" href="#main">Przejdź do treści</a>
+
+  <!-- Announcement bar -->
+  <div class="topbar" role="region" aria-label="Komunikat">
+    <div class="topbar__inner container">
+      <div class="topbar__left">
+        <span class="badge">Premium</span>
+        <span class="topbar__text">Meble na wymiar, kuchnie i zabudowy — od koncepcji po montaż.</span>
+      </div>
+      <div class="topbar__right">
+        <a class="topbar__link" href="tel:+48693040609" aria-label="Zadzwoń do Meblove">693 040 609</a>
+        <span class="dot" aria-hidden="true"></span>
+        <a class="topbar__link" href="mailto:biuro@meblove.com.pl" aria-label="Napisz do Meblove">biuro@meblove.com.pl</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a class="brand" href="#home" aria-label="Meblove — strona główna">
+        <span class="brand__mark" aria-hidden="true">
+          <span class="mark"></span>
+        </span>
+        <span class="brand__name">meblove</span>
+        <span class="brand__tag">custom interiors</span>
+      </a>
+
+      <nav class="nav" aria-label="Nawigacja">
+        <button class="nav__toggle" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleLines" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link" href="#offer">Oferta</a>
+          <a class="nav__link" href="#projects">Realizacje</a>
+          <a class="nav__link" href="#process">Proces</a>
+          <a class="nav__link" href="#reviews">Opinie</a>
+          <a class="nav__link" href="#faq">FAQ</a>
+          <a class="nav__link" href="#contact">Kontakt</a>
+          <button class="btn btn--primary nav__cta" type="button" data-open-modal="quote">
+            Bezpłatna wycena
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="home" aria-label="Sekcja powitalna">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <div class="hero__kicker">
+            <span class="pill">Meble na wymiar</span>
+            <span class="pill">Projekty wnętrz</span>
+            <span class="pill">Kuchnie • Szafy • Zabudowy</span>
+          </div>
+
+          <h1 class="hero__title">
+            Wnętrza, które wyglądają
+            <span class="text-gradient">jak projekt</span>,
+            a działają jak system.
+          </h1>
+
+          <p class="hero__lead">
+            Meblove tworzy meble na wymiar i zabudowy, które łączą minimalizm, perfekcyjne spasowanie i praktyczne rozwiązania.
+            Projektujemy, wyceniamy i montujemy — bez chaosu, bez kompromisów.
+          </p>
+
+          <div class="hero__actions">
+            <button class="btn btn--primary" type="button" data-open-modal="quote">
+              Zamów wycenę
+              <span class="btn__icon" aria-hidden="true">→</span>
+            </button>
+            <a class="btn btn--ghost" href="#projects">
+              Zobacz realizacje
+            </a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="trust">
+              <div class="trust__item">
+                <div class="trust__metric" data-count="250">0</div>
+                <div class="trust__label">projektów i zabudów</div>
+              </div>
+              <div class="trust__item">
+                <div class="trust__metric" data-count="12">0</div>
+                <div class="trust__label">lat doświadczenia</div>
+              </div>
+              <div class="trust__item">
+                <div class="trust__metric" data-count="5">0</div>
+                <div class="trust__label">gwiazdek średnio</div>
+              </div>
+            </div>
+
+            <div class="logos" aria-label="Wyróżniki">
+              <div class="logo-chip">Cichy domyk</div>
+              <div class="logo-chip">Perfekcyjne fugi</div>
+              <div class="logo-chip">Odporne fronty</div>
+              <div class="logo-chip">Projekt + montaż</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="showcase">
+            <div class="showcase__frame">
+              <div class="showcase__top">
+                <span class="dot dot--r"></span>
+                <span class="dot dot--y"></span>
+                <span class="dot dot--g"></span>
+              </div>
+
+              <div class="showcase__body">
+                <div class="tile tile--a">
+                  <div class="tile__label">Kuchnie</div>
+                  <div class="tile__hint">Fronty • Blaty • Oświetlenie</div>
+                </div>
+                <div class="tile tile--b">
+                  <div class="tile__label">Szafy</div>
+                  <div class="tile__hint">Garderoby • Systemy • Drzwi</div>
+                </div>
+                <div class="tile tile--c">
+                  <div class="tile__label">Zabudowy</div>
+                  <div class="tile__hint">TV • Przedpokój • Biuro</div>
+                </div>
+
+                <div class="showcase__glass">
+                  <div class="glass__row">
+                    <div class="glass__bar"></div>
+                    <div class="glass__bar glass__bar--short"></div>
+                  </div>
+                  <div class="glass__row">
+                    <div class="glass__chip">Minimal</div>
+                    <div class="glass__chip">Jakość</div>
+                    <div class="glass__chip">Detal</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="showcase__float floatcard floatcard--a">
+              <div class="floatcard__title">Projekt 3D</div>
+              <div class="floatcard__text">Zobacz układ i materiały przed realizacją.</div>
+            </div>
+            <div class="showcase__float floatcard floatcard--b">
+              <div class="floatcard__title">Wycena</div>
+              <div class="floatcard__text">Szybko i jasno. Bez „od... do...”.</div>
+            </div>
+            <div class="showcase__float floatcard floatcard--c">
+              <div class="floatcard__title">Montaż</div>
+              <div class="floatcard__text">Czysto, dokładnie, terminowo.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scrollhint" aria-hidden="true">
+        <span class="scrollhint__line"></span>
+        <span class="scrollhint__text">Przewiń</span>
+      </div>
+    </section>
+
+    <!-- Value props -->
+    <section class="section" aria-label="Dlaczego Meblove">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Wrażenie robi detal. Reszta to konsekwencja.</h2>
+          <p class="section__subtitle">
+            Projektujemy zabudowy, które są czyste wizualnie, logiczne w użyciu i odporne na codzienność.
+          </p>
+        </div>
+
+        <div class="cards cards--3">
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">⟡</div>
+            <h3 class="card__title">Estetyka premium</h3>
+            <p class="card__text">Minimalizm, proporcje, światło. Fronty, szczeliny i linie prowadzone „na ostro”.</p>
+            <ul class="card__list">
+              <li>maty, satyny, forniry, spieki</li>
+              <li>podświetlenia LED w profilach</li>
+              <li>spójne łączenia i rytm</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">⌁</div>
+            <h3 class="card__title">Funkcja bez kompromisu</h3>
+            <p class="card__text">W środku ma działać jak dobrze zaprojektowany system — wygodnie, intuicyjnie, po Twojemu.</p>
+            <ul class="card__list">
+              <li>ergonomia stref w kuchni</li>
+              <li>układy szuflad i organizerów</li>
+              <li>zabudowy „pod sprzęt”</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon" aria-hidden="true">⎔</div>
+            <h3 class="card__title">Proces, który dowozi</h3>
+            <p class="card__text">Od koncepcji po montaż. Jasne decyzje, jasne etapy, jasna komunikacja.</p>
+            <ul class="card__list">
+              <li>spotkanie i pomiar</li>
+              <li>projekt + materiały</li>
+              <li>produkcja i montaż</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offer -->
+    <section class="section section--soft" id="offer" aria-label="Oferta">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Oferta</h2>
+          <p class="section__subtitle">Kuchnie, szafy, zabudowy i wnętrza — spójnie, nowocześnie, na wymiar.</p>
+        </div>
+
+        <div class="grid grid--offer">
+          <article class="offer reveal">
+            <div class="offer__top">
+              <h3 class="offer__title">Kuchnie na wymiar</h3>
+              <p class="offer__desc">Nowoczesne układy, dobre światło robocze, jakość na lata.</p>
+            </div>
+            <div class="offer__meta">
+              <div class="chip">wyspa</div>
+              <div class="chip">cargo</div>
+              <div class="chip">blaty</div>
+              <div class="chip">AGD pod zabudowę</div>
+            </div>
+            <button class="link" type="button" data-open-modal="quote" data-service="Kuchnia na wymiar">Poproś o wycenę →</button>
+          </article>
+
+          <article class="offer reveal">
+            <div class="offer__top">
+              <h3 class="offer__title">Szafy i garderoby</h3>
+              <p class="offer__desc">Drzwi przesuwne lub klasyczne, perfekcyjny podział wnętrza.</p>
+            </div>
+            <div class="offer__meta">
+              <div class="chip">systemy przesuwne</div>
+              <div class="chip">oświetlenie</div>
+              <div class="chip">organizery</div>
+              <div class="chip">lustra</div>
+            </div>
+            <button class="link" type="button" data-open-modal="quote" data-service="Szafa / garderoba">Poproś o wycenę →</button>
+          </article>
+
+          <article class="offer reveal">
+            <div class="offer__top">
+              <h3 class="offer__title">Zabudowy meblowe</h3>
+              <p class="offer__desc">Salon, TV, przedpokój, łazienka, biuro — spójny styl w całym mieszkaniu.</p>
+            </div>
+            <div class="offer__meta">
+              <div class="chip">zabudowy RTV</div>
+              <div class="chip">lamelki</div>
+              <div class="chip">panele</div>
+              <div class="chip">półki</div>
+            </div>
+            <button class="link" type="button" data-open-modal="quote" data-service="Zabudowa meblowa">Poproś o wycenę →</button>
+          </article>
+
+          <article class="offer reveal">
+            <div class="offer__top">
+              <h3 class="offer__title">Projekty wnętrz</h3>
+              <p class="offer__desc">Układ funkcjonalny, moodboard, materiały i wizualizacje — zanim powstanie realizacja.</p>
+            </div>
+            <div class="offer__meta">
+              <div class="chip">koncepcja</div>
+              <div class="chip">wizualizacje</div>
+              <div class="chip">dobór materiałów</div>
+              <div class="chip">spójność</div>
+            </div>
+            <button class="link" type="button" data-open-modal="quote" data-service="Projekt wnętrza">Poproś o wycenę →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-label="Realizacje">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <h2 class="section__title">Realizacje</h2>
+            <p class="section__subtitle">Wybrane projekty — klimat premium, jasne barwy, spójny detal.</p>
+          </div>
+          <div class="filters" role="tablist" aria-label="Filtry realizacji">
+            <button class="filter is-active" type="button" role="tab" aria-selected="true" data-filter="all">Wszystko</button>
+            <button class="filter" type="button" role="tab" aria-selected="false" data-filter="kuchnie">Kuchnie</button>
+            <button class="filter" type="button" role="tab" aria-selected="false" data-filter="szafy">Szafy</button>
+            <button class="filter" type="button" role="tab" aria-selected="false" data-filter="zabudowy">Zabudowy</button>
+            <button class="filter" type="button" role="tab" aria-selected="false" data-filter="wnetrza">Wnętrza</button>
+          </div>
+        </div>
+
+        <div class="masonry" id="projectGrid">
+          <!-- NOTE: placeholder tiles; podmień zdjęcia później (CSS też ma wersję z gradients) -->
+          <a class="project reveal" href="#contact" data-tags="kuchnie" aria-label="Projekt: kuchnia premium w jasnych barwach">
+            <div class="project__media media media--a"></div>
+            <div class="project__cap">
+              <div class="project__title">Kuchnia — biel + ciepły beż</div>
+              <div class="project__meta">fronty mat • LED • pełen system</div>
+            </div>
+          </a>
+
+          <a class="project reveal" href="#contact" data-tags="szafy" aria-label="Projekt: szafa w przedpokoju">
+            <div class="project__media media media--b"></div>
+            <div class="project__cap">
+              <div class="project__title">Szafa — wejście jak lobby</div>
+              <div class="project__meta">lustro • listwy • ukryte uchwyty</div>
+            </div>
+          </a>
+
+          <a class="project reveal" href="#contact" data-tags="zabudowy" aria-label="Projekt: zabudowa RTV">
+            <div class="project__media media media--c"></div>
+            <div class="project__cap">
+              <div class="project__title">RTV — minimal z głębią</div>
+              <div class="project__meta">rytm pionów • światło • porządek</div>
+            </div>
+          </a>
+
+          <a class="project reveal" href="#contact" data-tags="wnetrza" aria-label="Projekt: wnętrze salonu">
+            <div class="project__media media media--d"></div>
+            <div class="project__cap">
+              <div class="project__title">Wnętrze — spójna paleta</div>
+              <div class="project__meta">materiały • proporcje • detale</div>
+            </div>
+          </a>
+
+          <a class="project reveal" href="#contact" data-tags="kuchnie" aria-label="Projekt: kuchnia z wyspą">
+            <div class="project__media media media--e"></div>
+            <div class="project__cap">
+              <div class="project__title">Kuchnia — wyspa i ciepłe światło</div>
+              <div class="project__meta">strefy • wygoda • premium</div>
+            </div>
+          </a>
+
+          <a class="project reveal" href="#contact" data-tags="szafy" aria-label="Projekt: garderoba">
+            <div class="project__media media media--f"></div>
+            <div class="project__cap">
+              <div class="project__title">Garderoba — cisza i porządek</div>
+              <div class="project__meta">podział • organizery • LED</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="callout reveal">
+          <div class="callout__content">
+            <h3 class="callout__title">Chcesz podobny efekt u siebie?</h3>
+            <p class="callout__text">
+              Napisz, co chcesz zrobić — podeślij wymiary, inspiracje albo rzut. Wrócimy z konkretem: kierunek, materiały i wstępna wycena.
+            </p>
+          </div>
+          <div class="callout__actions">
+            <button class="btn btn--primary" type="button" data-open-modal="quote">Bezpłatna wycena</button>
+            <a class="btn btn--ghost" href="mailto:biuro@meblove.com.pl">Napisz mail</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section section--soft" id="process" aria-label="Proces">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Proces</h2>
+          <p class="section__subtitle">Uproszczony, przewidywalny, bez „zobaczymy”.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal">
+            <div class="step__num">01</div>
+            <h3 class="step__title">Rozmowa i pomiar</h3>
+            <p class="step__text">Ustalamy potrzeby, styl, budżet. Robimy pomiar i zbieramy wytyczne.</p>
+          </article>
+
+          <article class="step reveal">
+            <div class="step__num">02</div>
+            <h3 class="step__title">Projekt i materiały</h3>
+            <p class="step__text">Proponujemy układ, rozwiązania, kolory oraz detale wykończenia.</p>
+          </article>
+
+          <article class="step reveal">
+            <div class="step__num">03</div>
+            <h3 class="step__title">Wycena i harmonogram</h3>
+            <p class="step__text">Dostajesz konkretną wycenę i terminy. Bez ukrytych „drobiazgów”.</p>
+          </article>
+
+          <article class="step reveal">
+            <div class="step__num">04</div>
+            <h3 class="step__title">Produkcja i montaż</h3>
+            <p class="step__text">Precyzyjna produkcja i montaż z dbałością o czystość i detale.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section" id="reviews" aria-label="Opinie">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <h2 class="section__title">Opinie</h2>
+            <p class="section__subtitle">To, co najważniejsze: jakość, terminowość, komunikacja.</p>
+          </div>
+          <div class="rating">
+            <div class="rating__stars" aria-hidden="true">★★★★★</div>
+            <div class="rating__text">Średnia ocen: <strong>5.0</strong></div>
+          </div>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel__track" data-carousel-track>
+            <article class="review">
+              <p class="review__text">„Kuchnia wyszła dokładnie jak na wizualizacji. Równe linie, idealne spasowanie. Montaż czysty i szybki.”</p>
+              <div class="review__who">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <div class="review__name">Klientka</div>
+                  <div class="review__meta">kuchnia na wymiar</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="review">
+              <p class="review__text">„Szafa w przedpokoju — mega funkcjonalna, a wizualnie lekka. Dokładnie taki efekt premium, o jaki chodziło.”</p>
+              <div class="review__who">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <div class="review__name">Klient</div>
+                  <div class="review__meta">szafa + zabudowa</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="review">
+              <p class="review__text">„Świetny kontakt, konkretna wycena i terminowość. Zabudowa RTV wygląda jak z katalogu.”</p>
+              <div class="review__who">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <div class="review__name">Klientka</div>
+                  <div class="review__meta">zabudowa RTV</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="review">
+              <p class="review__text">„Projekt wnętrza i dobór materiałów uratował nam mnóstwo czasu. Wszystko spójne, eleganckie i praktyczne.”</p>
+              <div class="review__who">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <div class="review__name">Klient</div>
+                  <div class="review__meta">projekt wnętrza</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel__controls">
+            <button class="iconbtn" type="button" data-carousel-prev aria-label="Poprzednia opinia">←</button>
+            <button class="iconbtn" type="button" data-carousel-next aria-label="Następna opinia">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--soft" id="faq" aria-label="Najczęstsze pytania">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">FAQ</h2>
+          <p class="section__subtitle">Kilka odpowiedzi, zanim zapytasz.</p>
+        </div>
+
+        <div class="faq" data-accordion>
+          <details class="faq__item reveal">
+            <summary class="faq__q">Ile trwa realizacja?</summary>
+            <div class="faq__a">
+              Zależy od zakresu i materiałów. Po pomiarze i akceptacji projektu dostajesz konkretny termin produkcji i montażu.
+            </div>
+          </details>
+
+          <details class="faq__item reveal">
+            <summary class="faq__q">Czy robicie projekt 3D?</summary>
+            <div class="faq__a">
+              Tak — pokazujemy układ, podziały, materiały i światło, żeby decyzje były łatwe i pewne.
+            </div>
+          </details>
+
+          <details class="faq__item reveal">
+            <summary class="faq__q">Jak wygląda wycena?</summary>
+            <div class="faq__a">
+              Wycena wynika z wymiarów, materiałów, okuć i poziomu skomplikowania. Chcemy, żeby była konkretna i zrozumiała.
+            </div>
+          </details>
+
+          <details class="faq__item reveal">
+            <summary class="faq__q">Czy pomagacie dobrać materiały?</summary>
+            <div class="faq__a">
+              Tak — dobieramy paletę i faktury pod klimat wnętrza: biel, beże, drewno, kamień, mat/satyna.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-label="Kontakt">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__left reveal">
+            <h2 class="section__title">Zróbmy coś pięknego.</h2>
+            <p class="section__subtitle">
+              Opisz, czego potrzebujesz. Jeśli masz: wymiary, inspiracje, rzut — podeślij. Wrócimy z propozycją i wyceną.
+            </p>
+
+            <div class="contact__cards">
+              <a class="info" href="tel:+48693040609" aria-label="Zadzwoń do Meblove">
+                <div class="info__label">Telefon</div>
+                <div class="info__value">693 040 609</div>
+                <div class="info__hint">najprościej, najszybciej</div>
+              </a>
+
+              <a class="info" href="mailto:biuro@meblove.com.pl" aria-label="Napisz do Meblove">
+                <div class="info__label">E-mail</div>
+                <div class="info__value">biuro@meblove.com.pl</div>
+                <div class="info__hint">wycena / projekt / pytania</div>
+              </a>
+            </div>
+
+            <div class="contact__mini">
+              <div class="mini">
+                <div class="mini__title">Szybka wycena</div>
+                <div class="mini__text">Kliknij „Bezpłatna wycena” i wypełnij 60-sekundowy formularz.</div>
+              </div>
+              <div class="mini">
+                <div class="mini__title">Styl</div>
+                <div class="mini__text">Jasna paleta, ciepłe beże, drewno, czyste linie.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__right reveal">
+            <form class="form" id="contactForm" novalidate>
+              <div class="form__head">
+                <h3 class="form__title">Napisz wiadomość</h3>
+                <p class="form__subtitle">Odpowiemy możliwie szybko.</p>
+              </div>
+
+              <div class="form__grid">
+                <label class="field">
+                  <span class="field__label">Imię</span>
+                  <input class="field__input" type="text" name="name" autocomplete="given-name" placeholder="Np. Bartosz" required />
+                </label>
+
+                <label class="field">
+                  <span class="field__label">Telefon</span>
+                  <input class="field__input" type="tel" name="phone" autocomplete="tel" placeholder="Np. 693 040 609" />
+                </label>
+
+                <label class="field field--full">
+                  <span class="field__label">E-mail</span>
+                  <input class="field__input" type="email" name="email" autocomplete="email" placeholder="Np. twoj@email.pl" required />
+                </label>
+
+                <label class="field field--full">
+                  <span class="field__label">Temat</span>
+                  <select class="field__input" name="topic" required>
+                    <option value="" selected disabled>Wybierz temat</option>
+                    <option>Kuchnia na wymiar</option>
+                    <option>Szafa / garderoba</option>
+                    <option>Zabudowa meblowa</option>
+                    <option>Projekt wnętrza</option>
+                    <option>Inne</option>
+                  </select>
+                </label>
+
+                <label class="field field--full">
+                  <span class="field__label">Wiadomość</span>
+                  <textarea class="field__input field__textarea" name="message" rows="5" placeholder="Napisz krótko: co, gdzie, wymiary (jeśli masz), inspiracje..." required></textarea>
+                </label>
+
+                <label class="field field--full field--consent">
+                  <input type="checkbox" name="consent" required />
+                  <span>Wyrażam zgodę na kontakt w sprawie wyceny/projektu.</span>
+                </label>
+              </div>
+
+              <div class="form__actions">
+                <button class="btn btn--primary" type="submit">
+                  Wyślij wiadomość
+                  <span class="btn__icon" aria-hidden="true">→</span>
+                </button>
+                <button class="btn btn--ghost" type="button" data-open-modal="quote">
+                  Szybka wycena
+                </button>
+              </div>
+
+              <div class="form__note" role="status" aria-live="polite" id="formNote"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" aria-label="Stopka">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <div class="brand brand--footer" aria-label="Meblove">
+              <span class="brand__mark" aria-hidden="true"><span class="mark"></span></span>
+              <span class="brand__name">meblove</span>
+            </div>
+            <p class="footer__text">
+              Meble na wymiar i projekty wnętrz. Jasny, nowoczesny styl. Perfekcyjny detal.
+            </p>
+          </div>
+
+          <div class="footer__cols">
+            <div class="footer__col">
+              <div class="footer__title">Oferta</div>
+              <a class="footer__link" href="#offer">Kuchnie</a>
+              <a class="footer__link" href="#offer">Szafy</a>
+              <a class="footer__link" href="#offer">Zabudowy</a>
+              <a class="footer__link" href="#offer">Wnętrza</a>
+            </div>
+
+            <div class="footer__col">
+              <div class="footer__title">Kontakt</div>
+              <a class="footer__link" href="tel:+48693040609">693 040 609</a>
+              <a class="footer__link" href="mailto:biuro@meblove.com.pl">biuro@meblove.com.pl</a>
+              <button class="footer__link footer__link--btn" type="button" data-open-modal="quote">Bezpłatna wycena</button>
+            </div>
+
+            <div class="footer__col">
+              <div class="footer__title">Szybkie linki</div>
+              <a class="footer__link" href="#projects">Realizacje</a>
+              <a class="footer__link" href="#process">Proces</a>
+              <a class="footer__link" href="#faq">FAQ</a>
+              <a class="footer__link" href="#contact">Formularz</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__small">© <span id="year"></span> Meblove. Wszelkie prawa zastrzeżone.</div>
+          <div class="footer__small footer__small--right">
+            <button class="link" type="button" data-scroll-top>Wróć na górę ↑</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floatcta" aria-label="Szybkie akcje">
+      <button class="floatcta__btn" type="button" data-open-modal="quote" aria-label="Otwórz szybkie zapytanie o wycenę">
+        Wycena
+      </button>
+      <a class="floatcta__btn floatcta__btn--ghost" href="tel:+48693040609" aria-label="Zadzwoń do Meblove">
+        Zadzwoń
+      </a>
+    </div>
+
+    <!-- Quote modal -->
+    <div class="modal" id="modalQuote" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Szybka wycena">
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__panel" role="document">
+        <div class="modal__head">
+          <div>
+            <div class="modal__kicker">Bezpłatna wycena</div>
+            <h3 class="modal__title">Opowiedz w 60 sekund</h3>
+          </div>
+          <button class="iconbtn" type="button" data-close-modal aria-label="Zamknij">✕</button>
+        </div>
+
+        <form class="modal__form" id="quoteForm" novalidate>
+          <div class="modal__grid">
+            <label class="field">
+              <span class="field__label">Rodzaj realizacji</span>
+              <select class="field__input" name="service" id="quoteService" required>
+                <option value="" selected disabled>Wybierz</option>
+                <option>Kuchnia na wymiar</option>
+                <option>Szafa / garderoba</option>
+                <option>Zabudowa meblowa</option>
+                <option>Projekt wnętrza</option>
+                <option>Inne</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Miasto</span>
+              <input class="field__input" type="text" name="city" placeholder="Np. Łódź" />
+            </label>
+
+            <label class="field">
+              <span class="field__label">Imię</span>
+              <input class="field__input" type="text" name="name" placeholder="Np. Bartosz" required />
+            </label>
+
+            <label class="field">
+              <span class="field__label">E-mail</span>
+              <input class="field__input" type="email" name="email" placeholder="Np. twoj@email.pl" required />
+            </label>
+
+            <label class="field field--full">
+              <span class="field__label">Opis</span>
+              <textarea class="field__input field__textarea" name="details" rows="4" placeholder="Wymiary (jeśli masz), inspiracje, styl (biały/beż/drewno), termin..." required></textarea>
+            </label>
+
+            <label class="field field--full field--consent">
+              <input type="checkbox" name="consent" required />
+              <span>Wyrażam zgodę na kontakt w sprawie wyceny/projektu.</span>
+            </label>
+          </div>
+
+          <div class="modal__actions">
+            <button class="btn btn--primary" type="submit">
+              Wyślij zapytanie
+              <span class="btn__icon" aria-hidden="true">→</span>
+            </button>
+            <button class="btn btn--ghost" type="button" data-close-modal>Anuluj</button>
+          </div>
+
+          <div class="form__note" role="status" aria-live="polite" id="quoteNote"></div>
+          <div class="modal__fineprint">
+            Kliknięcie „Wyślij” przygotuje wiadomość i otworzy Twój klient poczty (mailto). Na życzenie podepniesz backend później.
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- JS -->
+  <script src="app.js" defer></script>
+</body>
+</html>
